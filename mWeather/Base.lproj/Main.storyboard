@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7fH-UY-RU1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.52549019607843139" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FPi-Ob-3mE">
+                                <rect key="frame" x="69.5" y="113" width="235" height="441"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, 15 November 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOk-Pb-2ms">
+                                        <rect key="frame" x="4" y="0.0" width="227" height="106.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 °C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJQ-c3-nB0">
+                                        <rect key="frame" x="0.5" y="106.5" width="234" height="108.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="93"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frankfurt, Deutschland" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ky7-Tm-EAU">
+                                        <rect key="frame" x="17" y="215" width="201" height="23"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SsI-zc-8PU">
+                                        <rect key="frame" x="27" y="238" width="181" height="180"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clouds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orI-lc-h6s">
+                                        <rect key="frame" x="86.5" y="418" width="62" height="23"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SsI-zc-8PU" firstAttribute="leading" secondItem="FPi-Ob-3mE" secondAttribute="leading" constant="27" id="QJh-vh-oRc"/>
+                                    <constraint firstItem="SOk-Pb-2ms" firstAttribute="leading" secondItem="FPi-Ob-3mE" secondAttribute="leading" constant="4" id="dHG-PQ-x4D"/>
+                                    <constraint firstItem="Ky7-Tm-EAU" firstAttribute="leading" secondItem="FPi-Ob-3mE" secondAttribute="leading" constant="17" id="ziY-Fg-Jm1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7fH-UY-RU1" secondAttribute="bottom" id="Fmy-wF-7bh"/>
+                            <constraint firstItem="FPi-Ob-3mE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ipi-GH-kd7"/>
+                            <constraint firstItem="FPi-Ob-3mE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MuL-jS-9XW"/>
+                            <constraint firstItem="FPi-Ob-3mE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="NgN-Pw-6j9"/>
+                            <constraint firstItem="7fH-UY-RU1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ibn-n3-bUc"/>
+                            <constraint firstItem="7fH-UY-RU1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k00-QF-C2X"/>
+                            <constraint firstAttribute="trailing" secondItem="7fH-UY-RU1" secondAttribute="trailing" id="lpX-ag-WkN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewWeather" destination="SsI-zc-8PU" id="se1-zB-KVz"/>
+                        <outlet property="labelDate" destination="SOk-Pb-2ms" id="CxT-Xs-bXp"/>
+                        <outlet property="labelLocation" destination="Ky7-Tm-EAU" id="dQb-pa-6Ab"/>
+                        <outlet property="labelTemp" destination="yJQ-c3-nB0" id="AAP-wS-j88"/>
+                        <outlet property="labelWeather" destination="orI-lc-h6s" id="sGD-F8-8B6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
